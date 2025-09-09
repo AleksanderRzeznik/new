@@ -3,17 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dokument o owocach</title>
+    <title>Document</title>
+    <style>
+        table, td{
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-<h1><color: blue;> /owoce są dobre/</color:>
-    <font-size: 16px;></font-size: 16px;>
-    <margin-top: 20px;></margin-top: 20px;></h1>
-<table>
-<ol>
-    <li>Truskawka</li> <img src="truskawka.jpg" alt="truskawka"><li>Wiśnia</li> <img src="wiśnia.jpg" alt="wiśnia"><li>Malina</li> <img src="malina.jpg" alt="malina">
-</ol>
-<p>owoce są spoko</p><img src="spoko.jpg" alt="spoko">
-</table>
+    <h6>parafia św wojciecha</h6>
+    <h2>tabelka</h2>
+    <table>
+        <tr>
+            <th>kolumna 1</th>
+            <th>kolumna 2</th>
+            <th>kolumna 3</th>
+        </tr>
+        <tr>
+            <td>komórka 1</td>
+            <td>komórka 2</td>
+            <td>komórka 3</td>
+        </tr>
+        <tr>
+            <td>komórka 4</td>
+            <td>komórka 5</td>
+        </tr>
+        <tr>
+            <td>komórka 6</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>formularz</h2>
+    <form action="plik.php" method="post">
+        <h2>daj kotełka lol</h2>
+        <label for="wiek">
+            <p>zaznacz pole wieku człowieku</p>
+            <input type="number" name="wiek" id="wiek">
+        </label>
+        <label for="imie">
+            <p>imie kotełka</p>
+        <input type="text" name="imie" id="imie">
+    </label>
+    <label for="waga">
+        <p>ile waży kotełek</p>
+        <input type="number" name="waga" id="waga">
+    </label>
+    <label for="email">
+        <p>jaki email???</p>
+        <input type="email" name="email"id="email">
+    </label>
+        <label for="plec">
+            <p>kotek czy kociczka</p>
+            <select name="plec" id="plec">
+                <option value="k">kocica</option>
+                <option value="m">kot</option>
+        </label>
+       <label for="rasa-b">
+        <p>jaka jest rasa kociczki lub kotka?</p>
+       
+        <input type="radio" value="brytyjczyk" name="rasa" id="rasa-b">
+    </label>
+    <label for="rasa-d">
+        <p>jaka jest rasa kociczki lub kotka?</p>
+        <input type="radio" value="dachowiec" name="rasa" id="rasa-d">
+    </label>
+    <label for="rasa-s">
+        <p>czy rasa kociczki lub kotka?</p>
+        <input type="radio" value="syberyjski" name="rasa" id="rasa-s">
+    </label>
+        </select>
+<button>darmowe kotki z piwnicy</button>
+    </form>
+    
 </body>
 </html>
