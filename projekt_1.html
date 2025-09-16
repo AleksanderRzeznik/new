@@ -4,64 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projekt o parafji</title>
-    <style>
-        table,td{
-            border: 1px; color: black;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: antiquewhite;">
-    <h1 style="color: black; text-align: center;">Parafia Św.Wojciecha w Raciążu</h1>
-<img src="projekt 1.webp">
-<img src="projekt 2.webp">
-<img src="projekt 3.webp">
-<img src="projekt 4.webp">
-<img src="projekt 5.webp">
-<h3>ul. Wolności 14, 09-140 Raciąż</h3>
-<h3>23 679 10 06</h3>
-<h3>raciaz@diecezjaplocka.pl</h3>
-<hr>
-<ul>
-    <li>Gród w Raciążu wzmiankowany jest w 1065 r. Pierwotny kościół pw. św. Wojciecha zbudowano na podgrodziu przy grodzie kasztelańskim, w widłach rzek Raciążnicy i Karśnicy.</li>
-    <li> W grodzie tym odbywały się sejmiki województwa płockiego. W 1425 r.</li>
-    <li> Nadano przywilej na lokację miasta na prawie chełmińskim, do 1495 r. miasto było własnością książąt mazowieckich, potem do 1516 r.</li>
-    <li>Własnością królewską, następnie przeszło w ręce biskupów płockich aż do 1865 r. Po rozbiorach straciło znaczenie na rzecz Mławy. Prawa miejskie utraciło w 1869 r., odzyskało w 1921 r.
-    </li>
-</ul>
+<body>
+    <div>
+        <h1 id="tytuł">Parafia Św.Wojciecha w Raciążu</h1>
+    </div>
+    <div id="p1">
+        <img src="projekt1.jpg" alt="zdjęcie kościoła">
 
-<hr>
+        <img src="projekt2.jpg" alt="zdjęcie kościoła od środka">
 
-<table>
-    <h4>Duchowni:</h4>
-    <tr>
-        <td>ksiądz:</td>
-        <td>proboszcz:</td>
-    </tr>
-    <tr>
-        <th>ks. mgr Łukasz Gach.</th>
-        <th>ks. kan. mgr Wiesław Kosiński.</th>
-    </tr>
-     
+
+        <img src="projekt3.jpg" alt="zdjęcie kościoła">
+
+
+        <img src="projekt4.jpg" alt="zdjęcie kościoła">
+
+
+        <img src="projekt.jpg" alt="zdjęcie kościoła">
+    </div>
+    <div id="clear"></div>
+    <div id="informacje">
+        <h3>ul. Wolności 14, 09-140 Raciąż</h3>
+        <h3>23 679 10 06</h3>
+        <h3>raciaz@diecezjaplocka.pl</h3>
+    </div>
+    
+    <hr>
+    <div class="LISTA">
+        <ul>
+            <li>Gród w Raciążu wzmiankowany jest w 1065 r. Pierwotny kościół pw. św. Wojciecha zbudowano na podgrodziu
+                przy grodzie kasztelańskim, w widłach rzek Raciążnicy i Karśnicy.</li>
+            <li> W grodzie tym odbywały się sejmiki województwa płockiego. W 1425 r.</li>
+            <li> Nadano przywilej na lokację miasta na prawie chełmińskim, do 1495 r. miasto było własnością książąt
+                mazowieckich, potem do 1516 r.</li>
+            <li>Własnością królewską, następnie przeszło w ręce biskupów płockich aż do 1865 r. Po rozbiorach straciło
+                znaczenie na rzecz Mławy. Prawa miejskie utraciło w 1869 r., odzyskało w 1921 r.
+            </li>
+        </ul>
+    </div>
+    <hr>
+
+    
+    
+        <h4>Duchowni:</h4>
+            <p>ksiądz: ks. mgr Łukasz Gach.</p>
+            <p>proboszcz: ks. kan. mgr Wiesław Kosiński.</p>
    
-</table>
-<hr>
-<form action="plik.php" method="post">
-    <h2>Zamówienia mszy składane są za pomocą formularza poniżej</h2>
-    <h2>Formularz</h2>  
-    <label for="data zamówienia">
-        <p>Msze dostępne są w niedzielę,piątek i sobotę</p>
-        <input type="date" name="data zamówienia" id="data zamówienia">
-        <select name="godzina mszy" id="godzina"> 
-            <option value="godzina" id="godzina">9.30 </option>
-            <option value="godzina" id="godzina">10.40 </option>
-            <option value="godzina" id="godzina">17.30 </option>
-            <option value="godzina" id="godzina">18.40 </option>
-        </select>
-    </label>
-    <label for="Powód zamówienia mszy">
-<p>Dlaczego msza zostanie zamówiona?</p>
-<input type="text" name="Powód zamówienia mszy" id="Powód zamówienia mszy">
-    </label>
+           
+        
+        
+       
+         
+           
+        
+
+
+   
+
+    <hr>
+    <form action="projekt_1.html" method="post">
+        <h2>Zamówienia mszy składane są za pomocą formularza poniżej</h2>
+        <h2>Formularz</h2>
+        <label for="data zamówienia">
+            <p>Msze dostępne są w niedzielę,piątek i sobotę</p>
+            <input type="date" name="data zamówienia" id="data zamówienia">
+            <select name="godzina mszy" id="godzina">
+                <option value="godzina" id="godzina">9.30 </option>
+                <option value="godzina" id="godzina">10.40 </option>
+                <option value="godzina" id="godzina">17.30 </option>
+                <option value="godzina" id="godzina">18.40 </option>
+            </select>
+        </label>
+        <label for="Powód zamówienia mszy">
+            <p>Dlaczego msza zostanie zamówiona?</p>
+            <input type="text" name="Powód zamówienia mszy" id="Powód zamówienia mszy">
+        </label>
+
+    </form>
+    <button>wyślij</button>
 </body>
+
 </html>
