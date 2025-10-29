@@ -1,0 +1,55 @@
+Napisz zapytanie SQL, które wyświetli nazwę produktu oraz datę wprowadzenia
+z tabeli produkty dla produktów wprowadzonych w roku 2022.
+
+SELECT nazwa_produktu, data_wprowadzenia FROM produkty WHERE YEAR(data_wprowadzenia) = 2022;
+
+Napisz zapytanie SQL, które wyświetli nazwę produktu oraz datę wprowadzenia
+z tabeli produkty dla produktów wprowadzonych między 1 stycznia 2022
+a 31 grudnia 2022.
+
+SELECT nazwa_produktu, data_wprowadzenia FROM produkty WHERE data_wprowadzenia BETWEEN '2022-01-01' AND '2022-12-31';
+
+Napisz zapytanie SQL, które wyświetli imię, nazwisko oraz datę rejestracji
+klientów z tabeli klienci, którzy zarejestrowali się po 1 stycznia 2021 roku.
+
+SELECT imie, nazwisko, data_rejestracji FROM klienci WHERE DATE(data_rejestracji) > '2021-01-01';
+
+Napisz zapytanie SQL, które wyświetli nazwę produktu oraz liczbę dni,
+które upłynęły od daty wprowadzenia produktu do dnia dzisiejszego.
+Użyj funkcji DATEDIFF i CURDATE.
+
+SELECT DATEDIFF(CURRENT_DATE, data_wprowadzenia) FROM produkty;
+
+Napisz zapytanie SQL, które wyświetli id zamówienia oraz datę zamówienia
+z tabeli zamowienia dla zamówień złożonych w marcu 2023 roku.
+Użyj funkcji MONTH i YEAR.
+
+SELECT id_zamowienia, data_zamowienia FROM zamowienia WHERE MONTH(data_zamowienia) = 03 AND YEAR(data_zamowienia) = 2023;
+
+SELECT imie, nazwisko, TIMESTAMPDIFF(year, data_urodzenia, curdate()) AS wiek FROM pracownicy;
+
+Napisz zapytanie SQL, które wyświetli nazwę produktu oraz rok wprowadzenia
+z tabeli produkty. Użyj funkcji YEAR do wyodrębnienia roku z daty_wprowadzenia.
+
+SELECT nazwa_produktu, YEAR(data_wprowadzenia) AS rok_wprowadzenia FROM produkty;
+
+Napisz zapytanie SQL, które wyświetli nazwę producenta oraz liczbę lat
+współpracy (od data_wspolpracy_od do dnia dzisiejszego) z tabeli producenci.
+Użyj funkcji TIMESTAMPDIFF.
+
+SELECT nazwa, TIMESTAMPDIFF(year,data_wspolpracy_od, CURDATE()) AS lata_współpracy FROM producenci;
+
+Napisz zapytanie SQL, które wyświetli nazwę produktu, cenę zakupu,
+cenę sprzedaży oraz marżę (różnica między ceną sprzedaży a ceną zakupu)
+z tabeli produkty.
+
+SELECT nazwa_produktu, (cena_sprzedazy - cena_zakupu) FROM produkty;
+
+Napisz zapytanie SQL, które wyświetli nazwę produktu, cenę zakupu,
+cenę sprzedaży oraz procent marży (marża / cena zakupu * 100) z tabeli
+produkty. Wynik zaokrąglij do 2 miejsc po przecinku używając funkcji ROUND.
+
+SELECT nazwa_produktu, ROUND((cena_sprzedazy - cena_zakupu) / cena_zakupu * 100, 2) AS PROCENT_MARŻY FROM produkty;
+
+Napisz zapytanie SQL, które wyświetli nazwę produktu oraz cenę sprzedaży
+zaokrągloną w górę do pełnych złotych z tabeli produkty. Użyj funkcji CEIL.
