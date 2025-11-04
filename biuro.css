@@ -1,0 +1,65 @@
+
+
+
+body{
+    font-family: Georgia;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    height: 97vh;
+    width: 100%;
+    align-self: flex-end;
+    margin: 0;
+    padding: 0;
+}
+.baner{
+background-color: indigo;
+color: white;
+text-align: center;
+padding: 7px;
+}
+.cookies{
+background-color: #A1887F;
+color: white;
+text-align: right;
+padding: 10px;
+}
+.lewo{
+background-color: #D7CCC8;
+height: 550px;
+width: 35%;
+}
+.prawy{
+    display: flex;
+background-color: #D7CCC8;
+height: 550px;
+width: 65%;
+justify-content: flex-end;
+}
+.ol{
+    color: indigo;
+}
+.li{
+    color: indigo;
+}
+img{
+    padding: 6px;
+    height: 240px;
+    width: 480px;
+    border-radius: 20px;
+}
+img:hover{
+    box-shadow: 0 0 10px 2px indigo;
+    
+}
+footer{
+    background-color: indigo;
+    color: white;
+    text-align: center;
+    padding: 7px;
+}
+.rodzic{
+    display: flex;
+    flex-direction: row;
+}
