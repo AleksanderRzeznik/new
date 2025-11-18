@@ -37,6 +37,7 @@ margin-top: 10px;
 #avatar{
     display: flex;
     justify-self: center;
+    margin: 40px;
 }
 a{
     font-family: "Nunito", sans-serif;
@@ -52,3 +53,4 @@ a{
 hr{
 
 }
+
